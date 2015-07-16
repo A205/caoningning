@@ -1,35 +1,17 @@
-package com.example.cao.ireader;
+package com.example.cao.homework04;
 
-import android.app.TabActivity;
+import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TabHost;
 
 
-public class MainActivity extends TabActivity {
-    private TabHost host;
+public class MainActivity extends ActionBarActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        host=getTabHost();
-        TabHost.TabSpec s1=host.newTabSpec("one");
-        s1.setIndicator("List");
-        s1.setContent(R.id.tr1);
-        host.addTab(s1);
-//        host=getTabHost();
-        TabHost.TabSpec s2=host.newTabSpec("two");
-        s2.setIndicator("Discover");
-        s2.setContent(R.id.tr2);
-        host.addTab(s2);
-
-//        host=getTabHost();
-        TabHost.TabSpec s3=host.newTabSpec("three");
-        s3.setIndicator("Word");
-        s3.setContent(R.id.tr3);
-        host.addTab(s3);
-
     }
 
     @Override

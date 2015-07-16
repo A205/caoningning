@@ -26,14 +26,28 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@android:id/tabcontent">
-                <TextView
-                    android:gravity="bottom"
+                android:id="@android:id/tabcontent"
+                android:background="@drawable/jiemian3">
+                <LinearLayout
+                    android:gravity="center"
+                    android:id="@+id/tr1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="在此显示你已有的图书"
-                    android:background="@drawable/jiemian3"
-                    android:id="@+id/tr1"/>
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="点击下列按钮阅读txt文档," />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="暂时只能读取指定test.txt"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="test.txt"
+                        android:id="@+id/bt"/>
+                </LinearLayout>
                 <LinearLayout
                     android:id="@+id/tr2"
                     android:layout_width="match_parent"
@@ -53,7 +67,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="30dp"
                         android:text="Search"
-                        android:drawableRight="@drawable/search2"/>
+                        android:drawableRight="@drawable/search2" />
                 </LinearLayout>
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -86,21 +100,20 @@
                         android:layout_alignLeft="@id/view2"
                         android:textSize="20dp"
                         />
-                        <Button
+                    <Button
                         android:id="@+id/view3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sign"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentBottom="true"/>
-                       <EditText
-                            android:layout_width="200dp"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
-                            android:layout_toLeftOf="@id/view3"
-                            />
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@id/view3"
+                        />
                 </RelativeLayout>
-
             </FrameLayout>
         </LinearLayout>
     </TabHost>
